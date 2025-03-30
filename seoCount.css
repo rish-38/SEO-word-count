@@ -1,0 +1,155 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{  
+    /* padding: 100px; */
+    margin: 0;
+    background-image: linear-gradient(to right, #a8c0ff,#3f2b96);
+    font-family:"poppins",sans-serif;
+    text-align: center;
+}
+
+
+header{
+    color: aliceblue;
+    padding: 2% 0 0 0;
+    
+}
+
+header p{
+    font-size: 24px;
+    padding: 0 20% 0 20%;
+}
+
+section{
+    width: 800px;
+    height: 340px;
+    background-image: linear-gradient(to top right, #efefef37,#40404023);
+    margin: 1% 20% 0 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    justify-self: center;
+    flex-direction: column;
+    box-shadow: 10px 10px 10px rgba(45, 45, 45, 0.171);
+}
+#meta-title{
+    padding: 5px 0 1em 0;
+}
+header p span{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px; 
+}
+label{
+    color: rgba(240, 248, 255, 0.625);
+    padding: 5px 0 5px 0;
+    font-size: 20px;
+}
+
+input, input:focus{
+    background: none;
+    margin: 5px;
+    padding: 5px;
+    border: none;
+    outline: none;
+    width: 600px;
+    border-bottom: 1px solid rgba(240, 248, 255, 0.625);
+    font-size: 24px;
+    color: #f0f8ff;
+    caret-color:white;
+
+}
+
+
+
+input:-webkit-autofill,input:-webkit-autofill:focus{
+    border-bottom: 1px solid rgba(240, 248, 255, 0.625);
+    -webkit-text-fill-color:  #f0f8ff;
+    -webkit-box-shadow: none;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+button{
+    padding: 10px;
+    margin-top: 16px;
+    border: none;
+    border-radius: 10px;
+    font-size: 24px;
+    font-weight:bold ;
+    width: 25%;
+    color: #3f2b96;
+    background:#f0f8ff;
+    transition: 0.4s;
+}
+button:hover{
+    color: #f0f8ff;
+    background: #3f2b96;
+}
+
+button:active{
+    color: #f0f8ff9a;
+    background: #3f2b9697;
+}
+
+#result{
+text-align: center;
+font-size: 24px;
+padding: 4% 20% 0 20%;
+color: aliceblue; 
+font-weight: 500;
+
+}    
+
+@media (max-width: 1200px) {
+    header p{
+        font-size: 16px;
+        padding: 3% 20% 0 20%;
+    }
+    
+    header p span{
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 16px; 
+        margin-top: 3%;
+    }
+    section{
+        width: 600px;
+        height: 340px;
+    }
+
+    label{
+        color: rgba(240, 248, 255, 0.625);
+        padding: 5px 0 5px 0;
+        font-size: 16px;
+    }
+    
+    input{
+        width: 400px;
+    }
+    
+    input:focus{
+        font-size: 18px;
+    }
+    
+    
+    button{
+        font-size: 18px;
+    }
+
+    #result{
+    font-size: 18px;
+    padding: 6% 20% 0 20%;
+    }    
+}
+
+
+@media (max-width: 700px) {
+    section{
+        width: 400px;
+        height: 340px;
+    }
+    input{
+        width: 300px;
+    }
+}

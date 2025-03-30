@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEO Charcter counter</title>
+    <link rel="stylesheet" href="seoCount.css">
+
+</head>
+
+<body>
+
+    <header>
+        <h1>
+            <svg xmlns="http://www.w3.org/2000/svg" height="52px" viewBox="0 -960 960 960" width="52px" fill="#e3e3e3"
+                style="transform:translateY(15px)">
+                <path
+                    d="M160-400v-80h280v80H160Zm0-160v-80h440v80H160Zm0-160v-80h440v80H160Zm360 560v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q8 9 12.5 20t4.5 22q0 11-4 22.5T863-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
+            </svg>
+            SEO Charcter counter
+        </h1>
+        <p> This tool helps you optimize your SEO content by showing real-time character and word counts for your SEO
+            title and meta description. Stay within the ideal limits for better search engine visibility!
+            <br><br>
+            <span><strong>Tip: </strong>Use emotional triggers, numbers, and match search intent to boost clicks.</span>
+            <br>
+        </p>
+    </header>
+
+    <section>
+        <div id="meta-title">
+            <label for=""> Enter your SEO title</label>
+            <br>
+            <input type="text" id="metaTitle">
+        </div>
+        <div id="meta-description">
+            <label for=""> Enter your SEO description</label>
+            <br>
+            <input type="text" id="metaDescription">
+        </div>
+        <button onclick="showResult()">submit</button>
+    </section>
+
+    <div id="result">
+    </div>
+
+    <script src="seoCount.js"></script>
+
+</body>
+
+</html>
